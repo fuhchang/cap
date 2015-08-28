@@ -14,8 +14,6 @@
 
 Route::get('/', 'UsersController@index');
 Route::get('/home', 'UsersController@index');
-Route::post('signup', 'UsersController@createuser');
-Route::get('signup', 'UsersController@getsignupform');
 
 /*
  * Authentication routes..
