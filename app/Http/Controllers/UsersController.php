@@ -11,9 +11,10 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 
 class UsersController extends Controller
 {
-
+    //function that is call after login and return user detail of the user login.
     public function index(){
-        return view('welcome');
+        return \Auth::user();
+        //return view('welcome');
     }
     public function getsignupform(){
         return view('createuser');
